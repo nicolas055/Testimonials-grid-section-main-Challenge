@@ -1,0 +1,149 @@
+:root {
+/*Colors*/
+    /*Primary*/
+    --moderate-violet: hsl(263, 55%, 52%);
+    --Very-dark-grayish-blue: hsl(217, 19%, 35%);
+    --Very-dark-blackish-blue: hsl(219, 29%, 14%);
+    --White: hsl(0, 0%, 100%);
+    /*Neutral*/
+    --Light-gray: hsl(0, 0%, 81%);
+    --Light-grayish-blue: hsl(210, 46%, 95%);
+}
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: 'Karla', sans-serif;
+}
+main {
+    background-color: #edf2f8;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+
+.grid-container {
+    width: 1110px;
+    height: 572px;
+    display: grid;
+    grid-template-areas: 
+        "daniel daniel daniel jonathan kira"
+        "jeanette patrick patrick patrick kira"
+    ;
+    grid-column-gap: 30px;
+    grid-row-gap: 23px;
+}
+
+/*General stylizations*/
+ /*Profile*/
+.grid-item {
+    padding: 20px 30px 25px 30px;
+    border-radius: 10px;
+}
+.profile-flex-container {
+    display: flex;
+    align-items: center;
+    height: 33px;
+    margin-bottom: 15px;
+
+}
+.profile-flex-container .profile-avatar {
+    margin-right: 10px;
+}
+.profile-flex-container .profile-avatar {
+    width: 33px;
+    display: flex;
+}
+.profile-flex-container .profile-avatar img {
+    width: 100%;
+    border-radius: 100px;
+    border: 3px solid;
+}
+.profile-flex-container .name-and-status h4 {
+    color: #fff;
+    margin: 0px;
+    margin-bottom: 5px;
+    font-size: 11px;
+}
+.profile-flex-container .name-and-status p {
+    color: rgba(255, 255, 255, 0.5);
+    margin: 0;
+    letter-spacing: 0.2px;
+    word-spacing: -1px;
+    font-size: 10px;
+}
+
+ /*Reviews*/
+.review h2 {
+    color: #FFF;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 22px;
+    margin-bottom: 15px;
+}
+.review p {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 12px;
+    line-height: 18px;
+    margin-bottom: 0;
+}
+
+
+/*Specific tylization*/
+.grid-item.daniel {
+    grid-area: daniel;
+    background-color: var(--moderate-violet);
+    background-image: url('/images/bg-pattern-quotation.svg');
+    background-repeat: no-repeat;
+    background-position: top right 50px;
+}
+.grid-item.daniel .profile-avatar img {
+    border-color: #a37dd0;
+}
+
+.grid-item.jonathan {
+    grid-area: jonathan;
+    background-color: var(--Very-dark-grayish-blue);
+}
+.grid-item.jonathan .profile-avatar img {
+    border-color:  rgba(255, 255, 255, 0.7);
+}
+
+.grid-item.kira {
+    grid-area: kira;
+    background-color: var(--White);
+}
+.grid-item.kira .profile-avatar img {
+    border-color: #FFF;
+}
+.grid-item.kira .name-and-status h4 {
+    color: rgba(0, 0, 0, 0.8);
+}
+.grid-item.kira .name-and-status p {
+    color: rgba(0, 0, 0, 0.6);
+}
+.grid-item.kira .review h2 {
+    color: black;
+}
+.grid-item.kira .review p {
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.grid-item.jeanette {
+    grid-area: jeanette;
+    background-color: var(--White);
+}
+.grid-item.jeanette .profile-avatar img {
+    border-color: #FFF;
+}
+
+.grid-item.patrick {
+    grid-area: patrick;
+    background-color: var(--Very-dark-blackish-blue);
+}
+.grid-item.patrick .profile-avatar img {
+    border-color: #554792;
+}
+
