@@ -36,7 +36,7 @@ Mobile:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/testimonials-grid-section-main-6hbN6ttw0N)
 - Live Site URL: (https://nicolas055.github.io/Testimonials-grid-section-main-Challenge/)
 
 ## My process
