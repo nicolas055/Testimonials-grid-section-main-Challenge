@@ -27,7 +27,7 @@ Users should be able to:
 
 Desktop:
 
-!(Screenshots/"Screenshot Desktop.png")
+![](Screenshots/"Screenshot Desktop.png")
 
 
 Mobile:
