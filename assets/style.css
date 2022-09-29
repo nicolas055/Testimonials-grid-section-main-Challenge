@@ -15,10 +15,12 @@
 body {
     margin: 0;
     font-family: 'Barlow Semi Condensed', sans-serif;
+    height: 100vh;
+    -webkit-font-smoothing: antialiased;
 }
 main {
     background-color: #edf2f8;
-    height: 100vh;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -161,11 +163,27 @@ main {
 }
 
 
-/*responsiviness*/
+/*attribution*/
+.attribution {
+    position: absolute;
+    bottom: 5px;
+    text-align: center;
+    width: 100%;
+    color: #929292;
+    font-size: 12px;
+}
+.attribution a {
+    color: #998c8c;
+}
+
+
+/*responsiveness*/
 @media (max-width: 1023px) {
+    body {
+        height: auto;
+    }
     main {
         background-color: #edf2f8;
-        height: auto;
         display: block;
     }
     .grid-container {
@@ -186,5 +204,9 @@ main {
     }
     .grid-item.white {
         box-shadow: 40px 70px 120px -85px rgba(0,0,0);
+    }
+
+    .attribution {
+        position: static;
     }
 }
