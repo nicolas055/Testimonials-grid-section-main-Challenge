@@ -72,7 +72,7 @@ figure {
     flex-direction: column;
     justify-content: center;
 }
-.profile-flex-container .name-and-status h5 {
+.profile-flex-container .name-and-status h2 {
     color: rgba(255, 255, 255, 0.911);
     margin: 0px;
     font-size: 13px;
